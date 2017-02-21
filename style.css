@@ -1,36 +1,47 @@
-body, div, a {
-    padding:0;
-    margin:0;
-    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+* {
+	font-family: tahoma;
 }
 
-#calculator {
-	background-color: #999;
-	width: 310px;
-	height: 460px;
-	border: 3px black solid;
-	margin: 10px auto;
-	padding: 5px;
+body {
+	padding: 0;
+	margin: 0;
+}
+
+div#heelcalc {
+	margin-top: 1.5%;
+	background-color: #A4A4A4;
+	padding-bottom: 50px; 
+	padding-top: 15px;
+	margin-left: 43.3%;
+	margin-right: 43.3%;
 	border-radius: 10px;
+	border: 2px solid black;
+	min-width: 250px;
 }
 
-#total {
-    height: 70px;
-    width: 300px;
-    margin:auto;
-    background-color:white;
-    margin-bottom: 5px;
-    text-align: right;
-    font-size: 60px;
-    padding: 0 5px;
+#input {
+	margin-left: 15%;
+	margin-bottom: 5%;
 }
 
-#numbers, #operators {
-	margin: auto;	
+p#getal1,p#getal2 {
+	display: none;
 }
 
-#operators a {
-	display: block;
+div#calc {
+	margin-top: 1%;
+	margin-left: 2%;
+}
+
+div#buttons {
+}
+
+div#buttons a#clear {
+	padding-left: 93px;
+	padding-right: 93px;
+}
+
+div#buttons a {
 	width: 45px;
 	height: 45px;
 	float: left;
@@ -45,24 +56,8 @@ body, div, a {
 	border-radius: 10px;
 }
 
-#numbers a {
-	display: block;
-	width: 50px;
-	height: 50px;
-	float: left;
-	text-decoration: none;
-	color: black;
-	text-align: center;
-	font-size: 32pt;
-	padding: 10px;
-	margin: 5px 15px;
-	background: -webkit-gradient(linear, left top, left bottom, from(#EDEDED), to(#DCDCDC));
-	background: -moz-linear-gradient(top, #EDEDED, #DCDCDC);
-	border-radius: 10px;
-}
 
-a:hover{
-    background: -webkit-gradient(linear, left top, left bottom, from(#DCDCDC), to(#EDEDED));
-    background: -moz-linear-gradient(top,  #DCDCDC,  #EDEDED);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#DCDCDC', endColorstr='#EDEDED');
+a:hover {
+	background-color: lightgray;
+	cursor: pointer;
 }
